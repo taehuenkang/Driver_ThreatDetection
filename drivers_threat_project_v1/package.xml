@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematyp?>
+<package format="3">
+  <name>driver_monitoring</name>
+  <version>0.0.0</version>
+  <description>Driver monitoring system with lane detection and threat response</description>
+  <maintainer email="ubuntu@todo.todo">ubuntu</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- ROS 기본 메시지 -->
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <!-- OpenCV -->
+  <build_depend>opencv4</build_depend>
+  <exec_depend>opencv4</exec_depend>
+
+  <!-- 테스트 도구 -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
